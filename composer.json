@@ -1,0 +1,19 @@
+{
+    "name": "indicio-software/generator",
+    "description": "Multiple modules core generator",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dominik Gacek",
+            "email": "contact@dominikgacek.pl"
+        }
+    ],
+    "require": {
+      "symfony/console": "^4.3",
+      "coduo/php-humanizer": "^3.0"
+    },
+    "autoload": {
+      "psr-4": {"Indicio\\Generator\\": "src/"}
+    }
+}

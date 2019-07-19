@@ -1,0 +1,41 @@
+<?php
+
+/**
+ *
+ * @copyright Copyright (c) Indicio Software
+ */
+
+if (!defined('WHMCS')) {
+    die('This file cannot be accessed directly');
+}
+
+//require_once __DIR__.'/src/ApplicationFactory.php';
+
+/**
+ * Define addon module configuration parameters.
+ *
+ * Includes a number of required system fields including name, description,
+ * author, language and version.
+ *
+ * Also allows you to define any configuration parameters that should be
+ * presented to the user when activating and configuring the module. These
+ * values are then made available in all module function calls.
+ *
+ * Examples of each and their possible configuration parameters are provided in
+ * the fields parameter below.
+ *
+ * @return array
+ */
+
+
+function {{moduleNameSlug}}_config()
+{
+    return [
+        'name' => 'Indicio Sample Module', // Display name for your module
+        'description' => 'This addon shows you how to create your own module', // Description displayed within the admin interface
+        'author' => 'Indicio Software',
+        'language' => 'english', // Default language
+        'version' => '1.0.0', // Version number
+        'fields' => []
+    ];
+}
